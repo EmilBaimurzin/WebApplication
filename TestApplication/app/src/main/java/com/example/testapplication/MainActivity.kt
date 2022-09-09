@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.telephony.TelephonyManager
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testapplication.fitnessFragment.FitnessFragment
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
@@ -56,13 +57,13 @@ class MainActivity : AppCompatActivity() {
             .setMinimumFetchIntervalInSeconds(3600)
             .build()
         mFirebaseRemoteConfig.setConfigSettingsAsync(settings)
-        mFirebaseRemoteConfig.setDefaultsAsync(R.xml.remote_config)
         mFirebaseRemoteConfig.fetch(0)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     mFirebaseRemoteConfig.fetchAndActivate()
                     task.result
                     val url = mFirebaseRemoteConfig.getString("url")
+                    Log.e("url1", url)
                     sharedPreferences.edit()
                         .putString("url", url)
                         .apply()
