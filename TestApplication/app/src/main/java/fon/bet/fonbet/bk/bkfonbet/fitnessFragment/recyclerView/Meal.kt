@@ -1,4 +1,4 @@
-package com.example.testapplication.fitnessFragment.recyclerView
+package fon.bet.fonbet.bk.bkfonbet.fitnessFragment.recyclerView
 
 data class Meal(
     val mealType: String,

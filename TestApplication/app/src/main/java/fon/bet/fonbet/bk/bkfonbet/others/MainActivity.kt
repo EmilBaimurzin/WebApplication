@@ -1,12 +1,12 @@
-package com.example.testapplication
+package fon.bet.fonbet.bk.bkfonbet.others
 
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.telephony.TelephonyManager
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testapplication.fitnessFragment.FitnessFragment
+import com.example.testapplication.R
+import fon.bet.fonbet.bk.bkfonbet.fitnessFragment.FitnessFragment
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 

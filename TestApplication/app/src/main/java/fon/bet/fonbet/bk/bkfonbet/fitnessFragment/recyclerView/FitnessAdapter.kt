@@ -1,4 +1,4 @@
-package com.example.testapplication.fitnessFragment.recyclerView
+package fon.bet.fonbet.bk.bkfonbet.fitnessFragment.recyclerView
 
 import android.content.Context
 import android.view.LayoutInflater

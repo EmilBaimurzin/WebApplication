@@ -1,4 +1,4 @@
-package com.example.testapplication.fitnessFragment
+package fon.bet.fonbet.bk.bkfonbet.fitnessFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testapplication.databinding.FragmentFitnessBinding
-import com.example.testapplication.fitnessFragment.recyclerView.FitnessAdapter
+import fon.bet.fonbet.bk.bkfonbet.fitnessFragment.recyclerView.FitnessAdapter
 import com.google.android.material.tabs.TabLayout
 
 class FitnessFragment : Fragment() {

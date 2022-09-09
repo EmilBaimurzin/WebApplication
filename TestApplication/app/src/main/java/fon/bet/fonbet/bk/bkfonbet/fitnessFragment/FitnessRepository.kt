@@ -1,6 +1,6 @@
-package com.example.testapplication.fitnessFragment
+package fon.bet.fonbet.bk.bkfonbet.fitnessFragment
 
-import com.example.testapplication.fitnessFragment.recyclerView.Meal
+import fon.bet.fonbet.bk.bkfonbet.fitnessFragment.recyclerView.Meal
 
 class FitnessRepository {
     fun getMondayMeals(): MutableList<Meal> {

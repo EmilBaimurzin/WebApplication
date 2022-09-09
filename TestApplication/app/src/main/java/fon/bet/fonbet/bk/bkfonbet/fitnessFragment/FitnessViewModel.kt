@@ -1,8 +1,8 @@
-package com.example.testapplication.fitnessFragment
+package fon.bet.fonbet.bk.bkfonbet.fitnessFragment
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.example.testapplication.fitnessFragment.recyclerView.Meal
+import fon.bet.fonbet.bk.bkfonbet.fitnessFragment.recyclerView.Meal
 
 class FitnessViewModel(savedStateHandle: SavedStateHandle): ViewModel() {
     private val state = savedStateHandle

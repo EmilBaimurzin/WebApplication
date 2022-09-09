@@ -1,13 +1,11 @@
-package com.example.testapplication
+package fon.bet.fonbet.bk.bkfonbet.others
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.KeyEvent
 import android.view.View
 import android.webkit.WebView
 import androidx.core.view.doOnDetach
 import androidx.fragment.app.Fragment
-import kotlin.system.exitProcess
+import com.example.testapplication.R
 
 class WebFragment(): Fragment(R.layout.web_fragment) {
     private lateinit var webView: WebView
