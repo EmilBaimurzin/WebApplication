@@ -103,7 +103,7 @@ class FitnessRepository {
         )
     }
 
-    fun getWeekendsMeals(): MutableList<Meal> {
+    fun getSaturdayMeals(): MutableList<Meal> {
         return mutableListOf(
             Meal(mealType = "Breakfast",
                 meal = "Porridge with fruits",
@@ -120,6 +120,26 @@ class FitnessRepository {
                 PCF = "protein: 11 / carbs: 56 / fat: 5",
                 totalCalories = "398 calories",
                 image = "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600")
+        )
+    }
+
+    fun getSundayMeals(): MutableList<Meal> {
+        return mutableListOf(
+            Meal(mealType = "Breakfast",
+                meal = "Protein Waffles",
+                PCF = "protein: 29 / carbs: 25 / fat: 11",
+                totalCalories = "480 calories",
+                image = "https://media.istockphoto.com/photos/waffles-with-fruit-and-maple-syrup-on-a-marble-counter-picture-id185266029?b=1&k=20&m=185266029&s=612x612&w=0&h=xtxHsTncyIqm0sjUdkHeIX7TdAzANID0MDM0zitFoMw="),
+            Meal(mealType = "Lunch",
+                meal = "Fish",
+                PCF = "protein: 25 / carbs: 40 / fat: 30",
+                totalCalories = "609 calories",
+                image = "https://media.istockphoto.com/photos/roasted-sea-bream-fish-with-lemon-slices-picture-id855749956?b=1&k=20&m=855749956&s=612x612&w=0&h=YMkZ7-95dWgRWiPIAcQa6JR2vH_NN3-Wd-ixwVd4VQU="),
+            Meal(mealType = "Dinner",
+                meal = "Baked beans with eggs",
+                PCF = "protein: 43 / carbs: 46 / fat: 25",
+                totalCalories = "790 calories",
+                image = "https://media.istockphoto.com/photos/english-breakfast-picture-id687016590?b=1&k=20&m=687016590&s=612x612&w=0&h=GL4aQ-4X7HgcUbsoYcdyfTi1JjqvF26wTtjAYcPwcCY=")
         )
     }
 }

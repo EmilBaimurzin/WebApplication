@@ -28,8 +28,12 @@ class FitnessViewModel(savedStateHandle: SavedStateHandle): ViewModel() {
         return repository.getFridayMeals()
     }
 
-    fun getWeekendsMeals(): MutableList<Meal> {
-        return repository.getWeekendsMeals()
+    fun getSaturdayMeals(): MutableList<Meal> {
+        return repository.getSaturdayMeals()
+    }
+
+    fun getSundayMeals(): MutableList<Meal> {
+        return repository.getSundayMeals()
     }
 
     fun setTabState(value: Int) {

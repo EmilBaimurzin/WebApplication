@@ -86,12 +86,12 @@ class FitnessFragment : Fragment() {
                 viewModel.setTabState(4)
             }
             5 -> {
-                fitnessAdapter.items = viewModel.getWeekendsMeals()
+                fitnessAdapter.items = viewModel.getSaturdayMeals()
                 fitnessAdapter.notifyDataSetChanged()
                 viewModel.setTabState(5)
             }
             6 -> {
-                fitnessAdapter.items = viewModel.getWeekendsMeals()
+                fitnessAdapter.items = viewModel.getSundayMeals()
                 fitnessAdapter.notifyDataSetChanged()
                 viewModel.setTabState(6)
             }
