@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
-            checkSharedPreferencesUrl { url ->
+            checkSharedPreferencesUrl {
+                val url = sharedPreferences.getString("url", "")
                 if (url == "" || isGoogleBrand() || isEmulator() || !isSIMInserted()) {
                     supportFragmentManager.beginTransaction()
                         .setReorderingAllowed(true)
@@ -54,16 +55,15 @@ class MainActivity : AppCompatActivity() {
     private fun getFirebaseUrl(urlCallback: (String) -> Unit) {
         val mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance()
         val settings = FirebaseRemoteConfigSettings.Builder()
-            .setMinimumFetchIntervalInSeconds(3600)
+            .setMinimumFetchIntervalInSeconds(0)
             .build()
         mFirebaseRemoteConfig.setConfigSettingsAsync(settings)
-        mFirebaseRemoteConfig.fetch(0)
+        mFirebaseRemoteConfig.fetchAndActivate()
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     mFirebaseRemoteConfig.fetchAndActivate()
                     task.result
                     val url = mFirebaseRemoteConfig.getString("url")
-                    Log.e("url1", url)
                     sharedPreferences.edit()
                         .putString("url", url)
                         .apply()
