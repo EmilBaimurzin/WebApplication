@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179595640188",
+    "project_id": "fonbemil",
+    "storage_bucket": "fonbemil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179595640188:android:762d870e30f07f0ee2f8f9",
+        "android_client_info": {
+          "package_name": "fon.bet.fonbet.bk.bkfonbet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179595640188-se2abrhicir5ljjfg8h4cth1ls1chdch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNojPbr3fP1PabVId8fOepMyE3YwSCOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179595640188-se2abrhicir5ljjfg8h4cth1ls1chdch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
